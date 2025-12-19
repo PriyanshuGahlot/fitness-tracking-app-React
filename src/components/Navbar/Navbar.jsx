@@ -5,7 +5,7 @@ import { Dumbbell,House,Utensils,User } from 'lucide-react'
 
 const Navbar = () => {
   return (
-    <div className=' h-[8%] w-full flex justify-between items-center py-12 px-16 drop-shadow-xs border-b-1 border-gray-200'>
+    <div className='w-full flex justify-between items-center py-4 px-16 drop-shadow-xs border-b-1 border-gray-200'>
       <div className='flex items-center'>
         <NavLogo/> 
         <div className='ml-2 text-xl'>

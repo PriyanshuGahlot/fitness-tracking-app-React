@@ -10,7 +10,7 @@ import Profile from './components/Profile/Profile'
 function App() {
 
   return (
-    <div className='h-screen w-full'>
+    <div className='h-screen w-full overflow-hidden'>
       <Navbar/>
       <Routes>
         <Route path='/' element={<Dashboard/>} />
