@@ -24,7 +24,7 @@ const SummaryCard = ({color,icon,heading,data, hasProgressBar}) => {
         <div className='w-full text-gray-600'>{heading}</div>
         <div className='w-full'>{data}</div>
       </div>
-      {hasProgressBar && <ProgressBar/>}
+      {hasProgressBar && <ProgressBar value={50} color = {color}/>}
     </div>
   )
 }
