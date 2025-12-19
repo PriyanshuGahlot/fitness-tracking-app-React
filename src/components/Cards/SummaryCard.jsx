@@ -1,7 +1,7 @@
 import React from 'react'
 import ProgressBar from './ProgressBar'
 
-const SummaryCard = ({color,icon,heading,data, hasProgressBar}) => {
+const SummaryCard = ({color,icon,heading,data, hasProgressBar,value}) => {
 
   const darkColors = {
   red: "border-red-600",
@@ -24,7 +24,7 @@ const SummaryCard = ({color,icon,heading,data, hasProgressBar}) => {
         <div className='w-full text-gray-600'>{heading}</div>
         <div className='w-full'>{data}</div>
       </div>
-      {hasProgressBar && <ProgressBar value={50} color = {color}/>}
+      {hasProgressBar && <ProgressBar value={value*100} color = {color}/>}
     </div>
   )
 }
