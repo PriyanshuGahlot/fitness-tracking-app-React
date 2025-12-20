@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import { useStats } from '../../statsContext'
 
 const CheckBox = (props) => {
@@ -21,6 +21,10 @@ const CheckBox = (props) => {
         })
 
     }
+
+    useEffect(() => {
+        setActive(activeGraphItems.includes(key))
+    }, [activeGraphItems, key])
 
   return (
     <button
