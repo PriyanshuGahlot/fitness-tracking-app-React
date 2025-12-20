@@ -10,16 +10,20 @@ export const getMacroTargets = () => ({});
 
 export const StatsProvider = ({ children }) => {
   const [thisWeeksWorkoutsCount, setThisWeeksWorkoutsCount] = useState(0);
-  const [todaysKcal, setTodaysKcal] = useState(0);
-  const [todaysProtein, setTodaysProtein] = useState(0);
-  const [todaysFats, setTodaysFats] = useState(0);
-  const [todaysCarbs, setTodaysCarbs] = useState(0);
+  const [todaysKcal, setTodaysKcal] = useState(1300);
+  const [todaysProtein, setTodaysProtein] = useState(75);
+  const [todaysFats, setTodaysFats] = useState(50);
+  const [todaysCarbs, setTodaysCarbs] = useState(170);
   const [totalWorkoutCount, setTotalWorkoutCount] = useState(0);
   const [totalWorkoutMins, setTotalWorkoutMins] = useState(0);
-  const [kcalTarget, setKcalTarget] = useState(0);
-  const [fatsTarget, setFatsTarget] = useState(0);
-  const [proteinTarget, setProteinTarget] = useState(0);
-  const [carbsTarget, setCarbsTarget] = useState(0);
+  const [kcalTarget, setKcalTarget] = useState(1500);
+  const [fatsTarget, setFatsTarget] = useState(60);
+  const [proteinTarget, setProteinTarget] = useState(120);
+  const [carbsTarget, setCarbsTarget] = useState(200);
+  const [username, setUsername] = useState("Priyanshu");
+  const [email, setEmail] = useState("priyanshu@example.com");
+  const [activeGraphItems, setactiveGraphItems] = useState([]);
+  
 
   return (
     <StatsContext.Provider
@@ -46,6 +50,12 @@ export const StatsProvider = ({ children }) => {
         setProteinTarget,
         carbsTarget,
         setCarbsTarget,
+        username,
+        setUsername,
+        email,
+        setEmail,
+        activeGraphItems,
+        setactiveGraphItems,
       }}
     >
       {children}

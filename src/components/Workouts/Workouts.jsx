@@ -1,6 +1,6 @@
 import React from 'react'
 import CardSectionWorkouts from './CardSectionWorkouts'
-import AddBtn from '../Buttons/AddBtn'
+import AddBtn from '../Buttons/Btn'
 
 const Workouts = () => {
   return (

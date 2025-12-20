@@ -1,9 +1,9 @@
 import React from 'react'
 
-const AddBtn = (props) => {
+const Btn = (props) => {
 
     const bg = {
-        red: "bg-red-600",
+        red: "bg-red-500",
         blue: "bg-blue-600",
         green: "bg-green-600",
     }
@@ -15,4 +15,4 @@ const AddBtn = (props) => {
   )
 }
 
-export default AddBtn
+export default Btn

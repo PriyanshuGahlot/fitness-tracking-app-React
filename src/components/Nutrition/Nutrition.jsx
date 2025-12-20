@@ -1,6 +1,6 @@
 import React from 'react'
 import CardSectionNutrition from './CardSectionNutrition'
-import AddBtn from '../Buttons/AddBtn'
+import AddBtn from '../Buttons/Btn'
 
 const Nutrition = () => {
   return (
