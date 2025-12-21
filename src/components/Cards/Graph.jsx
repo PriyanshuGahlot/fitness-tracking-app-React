@@ -88,7 +88,7 @@ const Graph = () => {
             <YAxis/>
             <CartesianGrid strokeDasharray={"5 5"}/>
             {activeGraphItems.map((key, index) => (
-              <Line key={key} dataKey={key} stroke={colors[index]} />
+              <Line key={key} dataKey={key} stroke={colors[index]} connectNulls/>
             ))}
         </LineChart>
     </ResponsiveContainer>

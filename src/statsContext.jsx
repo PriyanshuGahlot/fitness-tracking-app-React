@@ -22,8 +22,22 @@ export const StatsProvider = ({ children }) => {
   const [carbsTarget, setCarbsTarget] = useState(200);
   const [username, setUsername] = useState("Priyanshu");
   const [email, setEmail] = useState("priyanshu@example.com");
-  const [activeGraphItems, setactiveGraphItems] = useState([]);
-  
+  const [activeGraphItems, setactiveGraphItems] = useState(["weight"]);
+  const [trackedStats, setTrackedStats] = useState([
+  "Weight",
+]);
+
+const [bodyStats, setBodyStats] = useState([
+  {
+    date: '2024-01-01',
+    weight: 92,
+  },
+]);
+
+const [units, setUnits] = useState({
+  weight: "Kg",
+});
+
 
   return (
     <StatsContext.Provider
@@ -56,6 +70,12 @@ export const StatsProvider = ({ children }) => {
         setEmail,
         activeGraphItems,
         setactiveGraphItems,
+        trackedStats,
+        setTrackedStats,
+        bodyStats,
+        setBodyStats,
+        units,
+        setUnits,
       }}
     >
       {children}

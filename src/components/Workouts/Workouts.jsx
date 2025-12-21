@@ -4,7 +4,7 @@ import AddBtn from '../Buttons/Btn'
 
 const Workouts = () => {
   return (
-    <div className='w-full h-full flex justify-center bg-gray-50 overflow-hidden'>
+    <div className='w-full h-full flex justify-center bg-gray-50'>
       <div className='w-[80%] py-12 bg-gray-50'>
         <div className='flex justify-between'>
           <div>

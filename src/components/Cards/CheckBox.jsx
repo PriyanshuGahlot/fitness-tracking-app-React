@@ -6,7 +6,7 @@ const CheckBox = (props) => {
     const [active, setActive] = useState(false);
     const {activeGraphItems, setactiveGraphItems} = useStats();
 
-    const key = props.text.toLowerCase().replace(" ","")
+    const key = props.text.toLowerCase().replace(/\s+/g,"")
 
     const handleClick = () =>{
         setActive(prev => !prev)
